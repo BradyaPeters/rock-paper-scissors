@@ -1,21 +1,15 @@
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
 
-
     const computerChoiceIndex = Math.floor(Math.random() * choices.length);
     const computerChoice = choices[computerChoiceIndex]
-
 
     return computerChoice;
 }
 
 
-
-
 let humanScore = 0;
 let computerScore = 0;
-
-
 
 
 function playRound(humanChoice, computerChoice) {
@@ -57,13 +51,9 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
-
-
 function showGoAgainButton() {
     document.querySelector("#goAgainButton").style.display = "block";
 }
-
-
 
 
 function setupGame() {
@@ -108,8 +98,6 @@ function setupGame() {
         document.querySelector("#goAgainButton").style.display = "none";
     });
 }
-
-
 
 
 setupGame();
